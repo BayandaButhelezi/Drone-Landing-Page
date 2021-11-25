@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Blak Spider</title>
+</head>
+
+<body>
+    <div class="CONTAINER">
+        <div class="navbar">
+            <img src="Assets/drone.png" alt="" class="logo">
+            <nav>
+                <ul id="menulist">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="Assets/menu-bar.png" alt="" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+
+        <div class="row">
+            <div class="col-1">
+                <h2>Black Spider</h2>
+                <h3>Markson VI</h3>
+                <p>The Best Drone Ever.</p>
+                <h4>Starts From R11 000</h4>
+                <button>Buy Now</button>
+            </div>
+            <div class="col-2">
+                <img src="Assets/drone.png" alt="iPhone 13 Pro" class="drone">
+                <div class="color-box"></div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var menulist = document.getElementById("menulist");
+
+        menulist.style.maxHeight = "0px";
+
+        function togglemenu() {
+
+            if (menulist.style.maxHeight == "0px") {
+                menulist.style.maxHeight = "140px"
+            } else {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+
+</html>

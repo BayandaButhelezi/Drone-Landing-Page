@@ -1,3 +1,5 @@
+/*General*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;900&display=swap');
 * {
     margin: 0;
@@ -5,7 +7,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.CONTAINER {
+.container {
     width: 100%;
     min-height: 100vh;
     padding-left: 8%;
@@ -14,7 +16,7 @@
     overflow: hidden;
 }
 
-.navbar {
+.navigation {
     display: flex;
     align-items: center;
     width: 100%;
@@ -33,6 +35,9 @@
     display: none;
 }
 
+
+/*Navigation Bar*/
+
 nav {
     flex: 1;
     text-align: right;
@@ -49,6 +54,9 @@ nav ul li a {
     text-decoration: none;
     color: goldenrod;
 }
+
+
+/*Hero Section*/
 
 .row {
     display: flex;
@@ -128,6 +136,8 @@ button {
     z-index: -1;
     transform: translateX(150px);
 }
+
+/*Media Quiries*/
 
 @media only screen and (max-width:700px) {
     nav ul {
